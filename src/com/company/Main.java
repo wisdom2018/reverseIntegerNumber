@@ -14,6 +14,7 @@ public class Main {
     public static int reverseInteger(int number) {
         int res = 0;
         while (number != 0) {
+            // 取模可以得到整数的尾数
             int temp = number % 10;
             // to identify whether the number is bigger than max integer value
             if (res > 214748364 || (res == 214748364 && temp > 7)) {
